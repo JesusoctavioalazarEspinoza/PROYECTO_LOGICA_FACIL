@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Programación Orientada a Objetos</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+    <header>
+        <h1>Programación Orientada a Objetos</h1>
+    </header>
+
+    <main>
+        <section class="content">
+            <h2>Qué es la Programación Orientada a Objetos</h2>
+            <p>La Programación Orientada a Objetos (POO) es un paradigma de programación basado en el uso de objetos. Los objetos combinan datos y comportamientos en una sola entidad. Los conceptos clave de la POO incluyen:</p>
+            <ul>
+                <li><strong>Clases:</strong> Plantillas para crear objetos. Definen atributos y métodos que los objetos pueden tener.</li>
+                <li><strong>Objetos:</strong> Instancias de una clase. Contienen datos (atributos) y métodos (funciones) para operar sobre esos datos.</li>
+                <li><strong>Herencia:</strong> Mecanismo que permite a una clase heredar atributos y métodos de otra clase.</li>
+                <li><strong>Polimorfismo:</strong> Permite a las funciones utilizar diferentes implementaciones basadas en el tipo de objeto.</li>
+                <li><strong>Encapsulación:</strong> Oculta los detalles internos del objeto y sólo expone lo necesario a través de métodos públicos.</li>
+            </ul>
+
+            <h2>Ejemplo Básico</h2>
+            <p>A continuación, se muestra un ejemplo simple de una clase en pseudocódigo:</p>
+            <pre>
+clase Animal {
+    atributo nombre
+
+    función constructor(nombre) {
+        this.nombre = nombre
+    }
+
+    función hacerSonido() {
+        imprimir("Sonido genérico")
+    }
+}
+
+clase Perro hereda de Animal {
+    función hacerSonido() {
+        imprimir("Guau!")
+    }
+}
+
+miPerro = nuevo Perro("Rex")
+miPerro.hacerSonido() // Imprime "Guau!"
+            </pre>
+
+            <div class="navigation">
+                <a href="index.html" class="button">Volver al Menú</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Proyecto de aprendizaje de lógica de programación</p>
+    </footer>
+</body>
+
+</html>

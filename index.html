@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Logica facil</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+    <header>
+        <h1>Bienvenido a Logica facil</h1>
+    </header>
+
+    <main>
+        <section class="intro">
+            <h2>Lecciones Disponibles</h2>
+            <p>Selecciona una lección para empezar a aprender los conceptos básicos de la lógica de programación.</p>
+        </section>
+
+        <!-- Menú de lecciones -->
+        <section class="lessons">
+            <div class="lesson">
+                <h3>1. Introducción a la Lógica de Programación</h3>
+                <a href="intro.html"><button>Comenzar</button></a>
+            </div>
+            <div class="lesson">
+                <h3>2. Estructuras Básicas</h3>
+                <a href="basica.html"><button>Comenzar</button></a>
+            </div>
+            <div class="lesson">
+                <h3>3. Estructuras de Datos y Algoritmos Básicos</h3>
+                <a href="datos-algoritmos.html"><button>Comenzar</button></a>
+            </div>
+            <div class="lesson">
+                <h3>4. Programación Orientada a Objetos</h3>
+                <a href="poo.html"><button>Comenzar</button></a>
+            </div>
+            <div class="lesson">
+                <h3>5. Avanzado</h3>
+                <a href="avanzado.html"><button>Comenzar</button></a>
+            </div>
+            <div class="lesson">
+                <h3>6. Aplicación Práctica y Proyectos</h3>
+                <a href="proyectos.html"><button>Comenzar</button></a>
+            </div>
+        </section>
+
+        <!-- Área para mostrar contenido de la lección -->
+        <section id="lesson-content" class="hidden">
+            <h2 id="lesson-title">Título de la Lección</h2>
+            <p id="lesson-description">Descripción de la lección aparecerá aquí...</p>
+
+            <!-- Ejemplo de pregunta de práctica -->
+            <div id="quiz" class="hidden">
+                <h3>Pregunta de práctica:</h3>
+                <p id="quiz-question">Aquí va la pregunta</p>
+                <button onclick="checkAnswer()">Responder</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Logica facil</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

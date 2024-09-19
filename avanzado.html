@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Avanzado</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+    <header>
+        <h1>Avanzado</h1>
+    </header>
+
+    <main>
+        <section class="content">
+            <h2>Tema Avanzado</h2>
+            <p>En esta sección, abordaremos temas más avanzados en la lógica de programación, tales como:</p>
+            <ul>
+                <li><strong>Algoritmos de Ordenación Avanzados:</strong> Como Quick Sort y Merge Sort.</li>
+                <li><strong>Complejidad Algorítmica:</strong> Análisis de la eficiencia de los algoritmos y cómo medirla.</li>
+                <li><strong>Programación Concurrente:</strong> Conceptos básicos sobre hilos y procesos.</li>
+                <li><strong>Patrones de Diseño:</strong> Introducción a patrones de diseño comunes como Singleton, Factory y Observer.</li>
+            </ul>
+
+            <h2>Ejemplo Avanzado</h2>
+            <p>A continuación, se muestra un ejemplo básico de un algoritmo de ordenación por mezcla (Merge Sort) en pseudocódigo:</p>
+            <pre>
+función mergeSort(lista) {
+    si (lista.tamaño <= 1) {
+        retornar lista
+    }
+
+    medio = lista.tamaño / 2
+    izquierda = lista.subLista(0, medio)
+    derecha = lista.subLista(medio, lista.tamaño)
+
+    izquierda = mergeSort(izquierda)
+    derecha = mergeSort(derecha)
+
+    retornar merge(izquierda, derecha)
+}
+
+función merge(izquierda, derecha) {
+    listaOrdenada = nueva Lista()
+    mientras (izquierda.noEstáVacía() y derecha.noEstáVacía()) {
+        si (izquierda.primerElemento() < derecha.primerElemento()) {
+            listaOrdenada.agregar(izquierda.quitarPrimerElemento())
+        } sino {
+            listaOrdenada.agregar(derecha.quitarPrimerElemento())
+        }
+    }
+    listaOrdenada.agregarTodos(izquierda)
+    listaOrdenada.agregarTodos(derecha)
+    retornar listaOrdenada
+}
+            </pre>
+
+            <div class="navigation">
+                <a href="index.html" class="button">Volver al Menú</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Proyecto de aprendizaje de lógica de programación</p>
+    </footer>
+</body>
+
+</html>
